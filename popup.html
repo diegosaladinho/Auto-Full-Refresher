@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: system-ui, sans-serif; width: 260px; padding: 14px; margin: 0; background: #1e1e24; color: #eee; }
+  h1 { font-size: 15px; margin: 0 0 12px; }
+  .row { display: flex; gap: 6px; margin-bottom: 10px; }
+  input, select, button { font: inherit; padding: 7px; border-radius: 6px; border: 1px solid #444; background: #2b2b33; color: #eee; }
+  input { width: 100%; min-width: 0; }
+  button { flex: 1; cursor: pointer; border: 0; font-weight: 600; }
+  #start { background: #2e7d32; }
+  #stop { background: #c62828; }
+  #status { font-size: 13px; color: #aaa; min-height: 18px; }
+  #status.on { color: #81c784; }
+</style>
+</head>
+<body>
+  <h1>🔄 Auto Full Refresh</h1>
+  <div class="row">
+    <input id="value" type="number" min="1" value="30">
+    <select id="unit">
+      <option value="1">segundos</option>
+      <option value="60">minutos</option>
+      <option value="3600">horas</option>
+    </select>
+  </div>
+  <div class="row">
+    <button id="start">Iniciar</button>
+    <button id="stop">Detener</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
