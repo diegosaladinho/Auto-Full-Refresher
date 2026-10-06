@@ -1,0 +1,2 @@
+# Auto-Full-Refresher
+[VIBECODED]
